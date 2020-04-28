@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+protocol DetailMovieService {
+    
+    func fetchDetailMovie(id: Int,
+    successHandler: @escaping (_ response: Movie) -> Void,
+    errorHandler: @escaping(_ error: Error) -> Void)
+}
